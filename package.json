@@ -1,0 +1,29 @@
+{
+  "name": "nord",
+  "version": "0.0.0",
+  "theme": true,
+  "themeAppearance": "dark",
+  "description": "An arctic, north-bluish dark theme based on the Nord color palette",
+  "styleSheets": [
+    "tokens.css",
+    "ui.css",
+    "syntax.css",
+    "preview.css"
+  ],
+  "keywords": [
+    "inkdrop",
+    "theme"
+  ],
+  "repository": "https://github.com/inkdropapp/inkdrop-nord-dark",
+  "author": "inkdropapp",
+  "license": "MIT",
+  "scripts": {
+    "prepublishOnly": "generate-palette"
+  },
+  "devDependencies": {
+    "@inkdropapp/theme-dev-helpers": "^0.6.1"
+  },
+  "engines": {
+    "inkdrop": "^6.0.0"
+  }
+}

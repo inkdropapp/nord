@@ -1,0 +1,192 @@
+@layer theme.ui {
+  /*
+   * Nord Dark — semantic UI overrides for Inkdrop v6.
+   *
+   * Surfaces follow the Nord depth progression: sidebar nord2 → note list
+   * bar nord1 → editor nord0. All values resolve through the Nord-generated
+   * ramps in tokens.css.
+   */
+
+  :root {
+    /*-------------------
+      Brand Colors
+    --------------------*/
+    --primary-color: hsl(var(--hsl-blue-500) / 90%); /* nord10 */
+
+    /*-------------------
+      Form Input
+    --------------------*/
+    --input-background: var(--color-neutral-950);
+
+    /*-------------------
+      Focused Input
+    --------------------*/
+    --focused-form-muted-border-color: var(--color-blue-400); /* nord9 */
+    --focused-outline-color: hsl(var(--hsl-cyan-500) / 30%); /* nord8 */
+
+    /*-------------------
+      Page
+    --------------------*/
+    --text-color: var(--color-neutral-200); /* nord4 */
+
+    /*-------------------
+      Links
+    --------------------*/
+    --link-hover-color: var(--color-cyan-400); /* nord8, brightened */
+
+    /*-------------------
+      Highlighted Text
+    --------------------*/
+    --highlight-background: hsl(var(--hsl-cyan-500) / 30%);
+    --highlight-color: var(--color-neutral-50); /* nord6 */
+
+    /*-------------------
+      Emotive Colors
+    --------------------*/
+    --info-color: var(--color-blue-400); /* nord9 */
+    --warning-color: var(--color-yellow-500); /* nord13 */
+
+    /*-------------------
+      Neutral Text
+    --------------------*/
+    --unselected-text-color: var(--color-neutral-400);
+    --selected-text-color: var(--color-neutral-50); /* nord6 */
+
+    /*-------------------
+      Borders
+    --------------------*/
+    --border-color: hsl(var(--hsl-neutral-500) / 20%);
+    --strong-border-color: hsl(var(--hsl-neutral-500) / 30%);
+    --solid-border-color: var(--color-neutral-700); /* nord2 */
+
+    /*-------------------
+      Button
+    --------------------*/
+    --button-background: hsl(var(--hsl-neutral-800) / 70%) none; /* nord1 */
+    --button-hover-background-color: hsl(var(--hsl-neutral-700) / 70%);
+    --basic-button-hover-background: hsl(var(--hsl-neutral-800) / 50%);
+
+    /*-------------------
+      Elements
+    --------------------*/
+    --kbd-background: hsl(var(--hsl-neutral-700) / 50%);
+
+    /*-------------------
+      Header
+    --------------------*/
+    --header-text-color: var(--color-cyan-500); /* nord8 */
+
+    /*-------------------
+      Input
+    --------------------*/
+    --input-focus-border-color: var(--color-blue-400); /* nord9 */
+
+    /*-------------------
+      Segment
+    --------------------*/
+    --segment-background: var(--color-neutral-800); /* nord1 */
+    --secondary-segment-background: hsl(var(--hsl-neutral-700) / 50%);
+    --grouped-segment-hover-background: hsl(var(--hsl-neutral-700) / 80%);
+    --piled-segments-background: var(--color-neutral-800);
+
+    /*-------------------
+      Form
+    --------------------*/
+    --form-select-background: var(--color-neutral-950);
+
+    /*-------------------
+      Menu
+    --------------------*/
+    --menu-background: var(--color-neutral-950);
+    --vertical-menu-background: hsl(var(--hsl-neutral-950) / 70%);
+    --tabular-menu-active-background: none hsl(var(--hsl-neutral-800));
+
+    /*-------------------
+      Popup
+    --------------------*/
+    --popup-background: var(--color-neutral-950);
+
+    /*-------------------
+      Table
+    --------------------*/
+    --table-header-background: hsl(var(--hsl-neutral-700) / 30%);
+
+    /*-------------------
+      Dropdown
+    --------------------*/
+    --dropdown-menu-background: var(--color-neutral-950);
+    --inline-dropdown-menu-background: hsl(var(--hsl-neutral-950) / 70%);
+
+    /*-------------------
+      Modal
+    --------------------*/
+    --modal-box-header-background: var(--color-neutral-800); /* nord1 */
+    --modal-box-content-background: var(--color-neutral-900); /* nord0 */
+    --modal-box-actions-background: var(--color-neutral-900);
+
+    /*-------------------
+      Side Bar
+    --------------------*/
+    --sidebar-background: var(--color-neutral-700); /* nord2 */
+    --sidebar-border-right: 1px solid hsl(var(--hsl-neutral-800));
+    --sidebar-menu-item-color: var(--text-color);
+    --sidebar-sync-status-view-background: hsl(var(--hsl-neutral-800) / 30%);
+    --sidebar-sync-status-view-border-top: 1px solid hsl(var(--hsl-neutral-700));
+
+    /*-------------------
+      Note List Bar
+    --------------------*/
+    --note-list-bar-background: var(--color-neutral-800); /* nord1 */
+    --note-list-bar-border-right: 1px solid hsl(var(--hsl-neutral-700));
+    --note-list-view-item-header-color: var(--text-color);
+    --note-list-view-item-separator-border: 1px solid
+      hsl(var(--hsl-neutral-700));
+    --note-list-view-item-date-color: hsl(var(--hsl-blue-400)); /* nord9 */
+    --note-list-view-item-selected-background: hsl(var(--hsl-blue-500) / 25%);
+    --note-list-view-item-active-background: hsl(var(--hsl-blue-500) / 50%);
+    --note-search-bar-input-background: var(--color-neutral-900);
+
+    /*-------------------
+      Editor
+    --------------------*/
+    --editor-background: var(--color-neutral-900); /* nord0 */
+    --editor-floating-actions-background: hsl(var(--hsl-neutral-900) / 70%);
+    --editor-drawer-background: hsl(var(--hsl-neutral-800) / 70%);
+
+    /*-------------------
+      Notifications
+    --------------------*/
+    --notification-item-background: hsl(var(--hsl-neutral-950) / 80%);
+
+    /*-------------------
+      Preferences
+    --------------------*/
+    --preferences-sidebar-background: var(--color-neutral-950);
+    --preferences-view-background: var(--color-neutral-900);
+
+    /*-------------------
+      Note Status
+    --------------------*/
+    --note-status-active: hsl(var(--hsl-blue-400)); /* nord9 */
+    --note-status-onhold: hsl(var(--hsl-yellow-500)); /* nord13 */
+    --note-status-completed: hsl(var(--hsl-green-500)); /* nord14 */
+    --note-status-dropped: hsl(var(--hsl-red-500)); /* nord11 */
+  }
+
+  /*-------------------
+    Acrylic background window
+  --------------------*/
+
+  :root:has(body.acrylic-window) {
+    --page-background: transparent;
+    --sidebar-background: hsl(var(--hsl-neutral-600) / 50%);
+    --note-list-bar-background: hsl(var(--hsl-neutral-800) / 70%);
+    --editor-background: hsl(var(--hsl-neutral-900) / 90%);
+    --inline-dropdown-menu-background: hsl(var(--hsl-neutral-900));
+    --vertical-menu-background: hsl(var(--hsl-neutral-900));
+  }
+
+  :root:has(body.acrylic-window.platform-win32) {
+    --page-background: hsl(var(--hsl-black) / 40%);
+  }
+}
