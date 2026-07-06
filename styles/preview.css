@@ -5,13 +5,17 @@
   :root {
     /* Nord surfaces — elevated panels sit on nord1/nord2 */
     --nord-preview-surface: hsl(var(--hsl-neutral-700) / 80%); /* nord2 */
-    --nord-preview-surface-subtle: hsl(var(--hsl-neutral-800) / 40%); /* nord1 */
+    --nord-preview-surface-subtle: hsl(
+      var(--hsl-neutral-800) / 40%
+    ); /* nord1 */
 
     /* Links — nord8 */
     --mde-preview-link-color: var(--color-cyan-400);
 
     /* Code blocks */
-    --mde-preview-codeblock-background-color: var(--nord-preview-surface-subtle);
+    --mde-preview-codeblock-background-color: var(
+      --nord-preview-surface-subtle
+    );
     --mde-preview-codeblock-meta-background-color: var(--nord-preview-surface);
     --mde-preview-inline-code-text-color: hsl(var(--hsl-neutral-200));
     --mde-preview-inline-code-border-width: 1px;
@@ -33,7 +37,9 @@
 
     /* Mark — nord13 highlight */
     --mde-preview-inline-mark-text-color: hsl(var(--hsl-yellow-50));
-    --mde-preview-inline-mark-background-color: hsl(var(--hsl-yellow-500) / 25%);
+    --mde-preview-inline-mark-background-color: hsl(
+      var(--hsl-yellow-500) / 25%
+    );
     --mde-preview-inline-mark-underline-color: hsl(var(--hsl-yellow-500));
 
     --mde-preview-heading-color: var(--color-cyan-500); /* nord8 */
@@ -69,8 +75,8 @@
      * (branchLabelColor → labelTextColor), so a tinted value leaks onto the
      * "main"/"develop" labels.
      */
-    --mermaid-label-box-background-color: hsl(var(--hsl-teal-900));
-    --mermaid-label-box-border-color: hsl(var(--hsl-teal-500));
+    --mermaid-label-box-background-color: hsl(var(--hsl-rose-900));
+    --mermaid-label-box-border-color: hsl(var(--hsl-rose-500));
     --mermaid-label-text-color: hsl(var(--hsl-neutral-200)); /* nord4 */
 
     /* Gantt */
