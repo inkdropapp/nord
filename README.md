@@ -1,8 +1,8 @@
-# nord-dark
+# nord
 
 An arctic, north-bluish Inkdrop **theme** based on the [Nord color palette](https://www.nordtheme.com/) — a single theme that styles the app UI, the editor syntax, and the Markdown preview.
 
-![Screenshot of nord-dark](./docs/screenshot.png)
+![Screenshot of nord](./docs/screenshot.png)
 
 <!-- Add your screenshot at docs/screenshot.png and reference it with a RELATIVE path
      (./docs/screenshot.png), not an absolute URL. The Inkdrop plugins website renders
@@ -12,7 +12,7 @@ An arctic, north-bluish Inkdrop **theme** based on the [Nord color palette](http
 ## How to install
 
 ```sh
-ipm install nord-dark
+ipm install nord
 ```
 
 Then enable it in **Preferences → Themes**.
