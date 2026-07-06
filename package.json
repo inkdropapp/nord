@@ -14,7 +14,7 @@
     "inkdrop",
     "theme"
   ],
-  "repository": "https://github.com/inkdropapp/inkdrop-nord",
+  "repository": "https://github.com/inkdropapp/nord",
   "author": "inkdropapp",
   "license": "MIT",
   "scripts": {
